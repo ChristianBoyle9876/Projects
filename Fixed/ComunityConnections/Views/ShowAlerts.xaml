@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:ComunityConnections.ViewModels"
+             x:Class="ComunityConnections.Views.ShowAlerts"
+             Title="ShowAlerts"
+             BackgroundColor="#18253d">
+    <ContentPage.BindingContext>
+        <local:AlertViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Spacing="10" Padding="10">
+            <ImageButton Source="{Binding WeatherData.current.condition.icon}"
+                         x:Name="imagew"
+                         WidthRequest="50" 
+                         HeightRequest="50" 
+                         VerticalOptions="Center" 
+                         HorizontalOptions="Center" />
+            <Button Text="Add Alert"
+        Clicked="CreateAlertNav"            
+        Grid.Row="2" 
+        Grid.Column="0"
+        BackgroundColor="#64676e"
+        TextColor="White"
+        WidthRequest="150"
+        HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="100">
+                <Label Text="Alerts"
+                       FontSize="20"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+
+                <ListView x:Name="AlertsListView"
+                          ItemsSource="{Binding Alerts}"
+                          HasUnevenRows="True"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame BackgroundColor="#394a70" CornerRadius="5" Padding="10" Margin="5">
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding alertTitle}" 
+FontSize="25"
+TextColor="White"
+HorizontalOptions="Center"
+Grid.Row="0" Grid.Column="1"
+                                        />
+                                        <Grid>
+
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Text="{Binding alertType}"
+                                               FontSize="16"
+                                               TextColor="White"
+                                               Grid.Row="0" Grid.Column="0"/>
+
+
+
+                                            <Label Text="{Binding location}" 
+                                               FontSize="16"
+                                               TextColor="White"
+                                               Grid.Row="2" Grid.Column="0"/>
+
+                                            <Label Text="{Binding username}" 
+                                               FontSize="16"
+                                               TextColor="White"
+                                               HorizontalTextAlignment="End"
+                                               Grid.Row="2" Grid.Column="1"/>
+
+                                            <Label Text="{Binding alertDescription}" 
+                                               FontSize="16"
+                                               TextColor="White"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"
+                                               Grid.Row="1" Grid.ColumnSpan="2" Margin="40"/>
+                                        </Grid>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

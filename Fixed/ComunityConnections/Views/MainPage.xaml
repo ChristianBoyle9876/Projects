@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:ComunityConnections.ViewModels"
+             x:Class="ComunityConnections.MainPage"
+             BackgroundColor="#18253d">
+
+    <ScrollView>
+        <StackLayout
+            Padding="30,50"
+            VerticalOptions="CenterAndExpand">
+
+            <Label
+                Text="Login"
+                FontSize="36"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                Margin="0,0,0,20"/>
+
+            <StackLayout
+                Spacing="15">
+
+                <Label
+                    Text="Username"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+                <Entry
+                    Text="{Binding userLogin.username}"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+
+                <Label
+                    Text="Password"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+                <Entry
+                    Text="{Binding userLogin.password}"
+                    IsPassword="True"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+
+                <Button
+                    x:Name="LoginBtn"
+                    Command="{Binding LoginCommand}"
+                    Text="Login"
+                    FontSize="20"
+                    BackgroundColor="#64676e"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="150" />
+
+                <Entry x:Name="ZipEntry"
+                       Placeholder="Enter Zipcode"
+                       Keyboard="Numeric"
+                       WidthRequest="100"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                <Button
+                    x:Name="ZipBtn"
+                    Text="Set Zip"
+                    FontSize="20"
+                    BackgroundColor="#64676e"
+                    TextColor="White"
+                    HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <Label
+               Text="Haven't registered yet?"
+               FontSize="20"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               Margin="0,20,0,10"/>
+
+            <Button
+               Text="Register"
+               FontSize="20"
+               BackgroundColor="#64676e"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand"
+               Clicked="RegiNav"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
+
+
+
+
+

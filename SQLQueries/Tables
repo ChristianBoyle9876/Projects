@@ -1,0 +1,41 @@
+CREATE TABLE [dbo].[User] (
+  [UserName] varchar(20) PRIMARY KEY,
+  [Password] varchar(30),
+  [Email] varchar(40),
+  [FirstName] varchar(40),
+  [LastName] varchar(20),
+  [PhoneNumber] varchar(30)
+);
+
+
+-- Use separate ALTER TABLE statements for each column addition
+ALTER TABLE [dbo].[User]
+ADD [AuthQuestion] varchar(100);
+
+ALTER TABLE [dbo].[User]
+ADD [AuthAnswer] varchar(100);
+
+
+CREATE TABLE [dbo].[Status] (
+  [StatusName] varchar(20) PRIMARY KEY
+);
+
+CREATE TABLE [dbo].[Alert] (
+  [AlertID] int PRIMARY KEY,
+  [TimePosted] datetime,
+  [AlertType] varchar(15),
+  [AlertTitle] varchar(50),
+  [AlertDescription] varchar(500),
+  [Zipcode] varchar(10),
+  [Location] varchar(30),
+  [Status] varchar(20),
+  [UserName] varchar(20),
+  CONSTRAINT [FK_Alert_User]
+    FOREIGN KEY ([UserName])
+      REFERENCES [dbo].[User]([UserName]),
+  CONSTRAINT [FK_Alert_Status]
+    FOREIGN KEY ([Status])
+      REFERENCES [dbo].[Status]([StatusName])
+);
+
+
