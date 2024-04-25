@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CommunityConnectionsApplication<Community-Connections>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.community.connections.CommunityConnectionsApplication",
+            "projectName": "Community-Connections",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
