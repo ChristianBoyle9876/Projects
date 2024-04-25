@@ -1,0 +1,71 @@
+is_global = true
+build_property.TargetFramework = net6.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ComunityConnections
+build_property.ProjectDir = E:\source\Enterprise-main\Enterprise-main\App\ComunityConnections\
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/CreateAlert.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.CreateAlert.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CreateAlert.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CreateAlert.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MainPage.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/ProfileVerification.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.ProfileVerification.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfileVerification.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfileVerification.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[E:/source/Enterprise-main/Enterprise-main/App/ComunityConnections/Views/ShowAlerts.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ComunityConnections.Views.ShowAlerts.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ShowAlerts.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ShowAlerts.xaml

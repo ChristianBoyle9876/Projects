@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:ComunityConnections.ViewModels"
+             x:Class="ComunityConnections.Views.CreateAlert"
+             Title="CreateAlert">
+    <VerticalStackLayout>
+
+        <Picker Title="Alert Type" SelectedIndex="0" SelectedItem="{Binding newAlert.alertType}">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Posotive</x:String>
+                    <x:String>Negative</x:String>
+                </x:Array>
+
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Alert Title" />
+        <Entry Placeholder="Alert Title"  Text="{Binding newAlert.alertTitle}" />
+
+        <Label Text="Alert Description" />
+        <Entry Placeholder="Alert Description" Text="{Binding newAlert.alertDescription}" />
+
+        <Label Text="Zipcode" />
+        <Entry Placeholder="Zipcode" Text="{Binding newAlert.zipcode}"/>
+
+        <Label Text="Location" />
+        <Entry Placeholder="Location" Text="{Binding newAlert.location}"/>
+
+
+        <Picker Title="Alert Status" SelectedIndex="0" SelectedItem="{Binding newAlert.status}">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Current</x:String>
+                    <x:String>Upcoming</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Create Alert"             
+        Command="{Binding CreateAlertCommand}"
+        />
+        
+       
+    </VerticalStackLayout>
+</ContentPage>

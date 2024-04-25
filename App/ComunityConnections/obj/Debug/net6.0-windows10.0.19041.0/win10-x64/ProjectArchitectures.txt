@@ -1,0 +1,1 @@
+E:\source\Enterprise-main\Enterprise-main\App\ComunityConnections\ComunityConnections.csproj;x64

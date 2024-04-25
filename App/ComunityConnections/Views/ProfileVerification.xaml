@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComunityConnections.Views.ProfileVerification"
+             Title="ProfileVerification">
+    <VerticalStackLayout>
+        <Label
+                x:Name="QuestionLabel"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+        <Entry
+                x:Name="answerEntry"
+                HorizontalOptions="Center" />
+
+        <Button
+                Text="Submit"
+                Pressed="Button_Pressed"
+                HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

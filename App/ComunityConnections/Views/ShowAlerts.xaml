@@ -1,0 +1,124 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComunityConnections.Views.ShowAlerts"
+             xmlns:local ="clr-namespace:ComunityConnections.ViewModels"
+             Title="ShowAlerts">
+    <ContentPage.BindingContext>
+        <local:AlertViewModel />
+    </ContentPage.BindingContext>
+
+
+    <!--Add a RowDefinition with Height="100"
+Add a RowDefinition with Height="*"
+Set ScrollView Row="1"-->
+
+
+    <Grid>
+        
+        
+<Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*"/>
+        
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <HorizontalStackLayout Grid.Row="0">
+            <Button Text="Search Zip"
+                    Clicked="Search" />
+
+            <Entry x:Name="ZipEntry"
+                   Placeholder="Enter Zipcode"
+                   Keyboard="Numeric"
+                   WidthRequest="100"
+                   HorizontalOptions="Center" />
+
+            <ImageButton Source="{Binding WeatherData.current.condition.icon}" 
+                   WidthRequest="50" 
+                   HeightRequest="50" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                    />
+
+        </HorizontalStackLayout>
+
+        <Button Text="Add Alert" Clicked="CreateAlertNav"            
+                Grid.Row="2" 
+            Grid.Column="0"/>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout>
+
+                <Label 
+            Text="Alerts"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"  />
+
+
+                <ListView
+    x:Name="AlertsListView"
+    ItemsSource="{Binding Alerts}"
+    HasUnevenRows="True"
+    VerticalOptions="FillAndExpand"
+    HorizontalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding alertType}"/>
+                                    <Label Text="{Binding alertTitle}" />
+                                    <Label Text="{Binding alertDescription}" />
+                                    <Label Text="{Binding zipcode}" />
+                                    <Label Text="{Binding location}" />
+                                    <Label Text="{Binding username}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </VerticalStackLayout>
+        </ScrollView>
+</Grid>
+        
+        
+        
+        
+    <!--<ScrollView>
+
+            <VerticalStackLayout>
+            <Button Text="Add Alert" Clicked="CreateAlertNav" />
+
+            <Label 
+            Text="Alerts"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+                <ListView
+            x:Name="AlertsListView"
+            ItemsSource="{Binding Alerts}"
+            HasUnevenRows="True"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding alertType}" TextColor="White" />
+                                    <Label Text="{Binding alertTitle}" />
+                                    <Label Text="{Binding alertDescription}" />
+                                    <Label Text="{Binding zipcode}" />
+                                    <Label Text="{Binding location}" />
+                                    <Label Text="{Binding username}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+            </VerticalStackLayout>
+        </ScrollView>-->
+</ContentPage>
