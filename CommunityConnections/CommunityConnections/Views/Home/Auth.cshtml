@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Two-Factor Authentication";
+}
+
+<h1 class="text-center mt-5 display-4">Two-Factor Authentication</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+            <form method="post" asp-action="Auth">
+
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger text-center" role="alert" style="margin-bottom: 15px;">
+                        @ViewBag.ErrorMessage
+                    </div>
+                }
+
+                <div class="form-group text-center" style="margin-bottom: 15px;">
+                    <label for="authQuestion" class="form-label" style="font-size: 20px;">Security Question</label>
+                    <input type="text" class="form-control text-center" id="authQuestion" name="authQuestion" value="@ViewBag.AuthQuestion" readonly required>
+                </div>
+
+                <div class="form-group text-center" style="margin-bottom: 15px;">
+                    <label for="authAnswer" class="form-label" style="font-size: 20px;">Security Answer</label>
+                    <input type="text" class="form-control text-center" id="authAnswer" name="authAnswer" autocomplete="off" required>
+                </div>
+
+                <div class="form-group text-center" style="margin-bottom: 15px;">
+                    <input type="submit" value="Submit" class="btn btn-primary" style="width: 100%; font-size: large" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

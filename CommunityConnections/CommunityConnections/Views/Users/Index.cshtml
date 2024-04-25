@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CommunityConnections.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var user in Model.Where(entry => entry.UserName == ChooseUser.SelectedUsername))
+{
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <h1 class="text-center mt-3 mb-4 display-4">Hello, @user.FirstName!</h1>
+                @await Html.PartialAsync("_UserFormPartial", user)
+            </div>
+        </div>
+    </div>
+}
+
+<div class="text-center mt-3">
+    <a asp-controller="Alerts" asp-action="Index">Back to alerts</a>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

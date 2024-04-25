@@ -1,0 +1,83 @@
+﻿@model CommunityConnections.Models.Alert
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center mt-5 display-4">Create Alert</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+            <form asp-action="Create">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="AlertTitle" class="control-label col-md-4 h4">Alert Title</label>
+                    <div class="col-md-8">
+                        <input asp-for="AlertTitle" class="form-control text-center" />
+                        <span asp-validation-for="AlertTitle" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="AlertType" class="control-label col-md-4 h4">Alert Type</label>
+                    <div class="col-md-8">
+                        <select asp-for="AlertType" class="form-control text-center" required>
+                            <option value="Positive">Positive</option>
+                            <option value="Negative">Negative</option>
+                        </select>
+                        <span asp-validation-for="AlertType" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="Status" class="control-label col-md-4 h4">Status</label>
+                    <div class="col-md-8">
+                        <select asp-for="Status" class="form-control text-center" asp-items="ViewBag.Status"></select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="Location" class="control-label col-md-4 h4">Location</label>
+                    <div class="col-md-8">
+                        <input asp-for="Location" class="form-control text-center" />
+                        <span asp-validation-for="Location" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="Zipcode" class="control-label col-md-4 h4">Zipcode</label>
+                    <div class="col-md-8">
+                        <input asp-for="Zipcode" class="form-control text-center" />
+                        <span asp-validation-for="Zipcode" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row" style="margin-bottom: 15px;">
+                    <label asp-for="AlertDescription" class="control-label col-md-4 h4">Alert Description</label>
+                    <div class="col-md-8">
+                        <textarea asp-for="AlertDescription" class="form-control" rows="4"></textarea>
+                        <span asp-validation-for="AlertDescription" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group text-center" style="margin-bottom: 15px;">
+                    <input type="submit" value="Post" class="btn btn-primary" style="width: 100%; font-size: large" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    <a asp-controller="Alerts" asp-action="Index">Back to alerts</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

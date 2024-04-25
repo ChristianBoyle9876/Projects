@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CommunityConnections
+build_property.RootNamespace = CommunityConnections
+build_property.ProjectDir = E:\source\Enterprise-main\Enterprise-main\CommunityConnections\CommunityConnections\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\source\Enterprise-main\Enterprise-main\CommunityConnections\CommunityConnections
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Alerts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Alerts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Alerts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Alerts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Alerts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Home/Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/_UserFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyRm9ybVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/_ViewAlertsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3QWxlcnRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Status/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Status/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Status/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Status/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Status/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/source/Enterprise-main/Enterprise-main/CommunityConnections/CommunityConnections/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5du9vd5z1y

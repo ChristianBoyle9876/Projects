@@ -1,0 +1,117 @@
+﻿@model IEnumerable<CommunityConnections.Models.Alert>
+
+<div class="container mt-5 text-center">
+    <h1 class="display-4">Alerts</h1>
+
+    @if (ViewBag.WeatherIcon != null)
+    {
+        <img src="@ViewBag.WeatherIcon" alt="Weather Icon">
+        <p>Location: @ViewBag.Location</p>
+        <p>Temperature: @ViewBag.TemperatureFahrenheit °F</p>
+        <p>Zipcode: @ViewBag.CurrentZipcode</p>
+    }
+    else
+    {
+        <p>@ViewBag.WeatherError</p>
+    }
+
+    <form method="get" action="@Url.Action("SearchByZipAndType", "Alerts")" class="text-center">
+        <label class="h4">Filter by Alert Type:</label>
+        <!-- Radio buttons for selecting alert type -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="alertType" id="positiveAlerts" value="Positive">
+                    <label class="form-check-label" for="positiveAlerts">Positive</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="alertType" id="negativeAlerts" value="Negative">
+                    <label class="form-check-label" for="negativeAlerts">Negative</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 justify-content-center">
+            <div class="col-md-6">
+                <label class="h4">Search by Zipcode:</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="zipLabel">Zip</span>
+                    <input type="text" class="form-control" name="zipcode" placeholder="Enter Zipcode" aria-label="Zipcode" aria-describedby="zipLabel">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    @* <div class="row mt-3 justify-content-center">
+        <div class="col-md-6">
+            <form method="get" action="@Url.Action("SearchByZip", "Alerts")">
+                <label class="h4">Search by Zipcode:</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="zipLabel">Zip</span>
+                    <input type="text" class="form-control" name="zipcode" placeholder="Enter Zipcode" aria-label="Zipcode" aria-describedby="zipLabel">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <form method="get" action="@Url.Action("FilterByTypeAndZip", "Alerts")">
+        <input type="hidden" name="zipcode" value="@ViewBag.CurrentZipcode" />
+        <label class="h4">Filter by Alert Type:</label>
+        <!-- Radio buttons for selecting alert type -->
+        <!-- Include the selected zipcode as a hidden input -->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="alertType" id="allAlerts" value="All" checked>
+            <label class="form-check-label" for="allAlerts">
+                All
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="alertType" id="positiveAlerts" value="Positive">
+            <label class="form-check-label" for="positiveAlerts">
+                Positive
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="alertType" id="negativeAlerts" value="Negative">
+            <label class="form-check-label" for="negativeAlerts">
+                Negative
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </form> *@
+
+    <div class="row mt-4">
+        @foreach (var alert in Model.OrderByDescending(a => a.TimePosted))
+        {
+            <div class="col-md-8 mx-auto mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><strong>@alert.AlertTitle</strong></h5>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="card-text"><strong></strong> @alert.AlertType</p>
+                            </div>
+                            <div>
+                                <p class="card-text"><strong></strong> @alert.Status</p>
+                            </div>
+                        </div>
+                        <div class="mb-3"></div>
+                        <p class="card-text">@alert.AlertDescription</p>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="card-text"><strong></strong> @($"{alert.Location} - {alert.TimePostedFormatted}")</p>
+                            </div>
+                            <div>
+                                <p class="card-text"><strong></strong> @alert.UserName</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
